@@ -1,6 +1,6 @@
 /* HIV positive patient */
 Condition HIV_positive_patient:
-	HIV_test_result is positive
+	'HIV test result' is positive
 		
 /* Patient presenting with Anaemia */	
 Condition anaemic_patient:
