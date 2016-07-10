@@ -36,11 +36,11 @@ Condition weight_less_than_35_kg:
 
 /* Younger child patient's maximum age */	
 Condition younger_child_maximum_age:
- 	age <= 3 years 	
+ 	age < 3 years 	
 
 /* Younger child patient's maximum age */	
 Condition older_child_minimum_age:
- 	age <= 3 years 	
+ 	age >= 3 years 	
 
 /* Patient not on ART */	
 Condition not_on_ART:

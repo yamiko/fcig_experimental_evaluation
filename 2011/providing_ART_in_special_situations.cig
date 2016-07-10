@@ -4,27 +4,27 @@ Condition HIV_positive_patient:
 		
 /* Patient presenting with Anaemia */	
 Condition anaemic_patient:
-	anaemia is true
+	anaemia is present
 	
 /* Patient presenting with active TB */	
 Condition TB_patient:
-	'TB' is true
+	'TB' is present
 	
 /* Patient presenting with Jaundice */	
 Condition jaundice_patient:
-	'Jaundice' is true
+	'Jaundice' is present
 
 /* Patient presenting with pregnancy */	
 Condition pregnant_patient:
-	'Pregnant woman' is true
+	'Pregnant woman' is present
 
 /* Patient is in labour */	
 Condition in_labour:
-	'In labour' is true
+	'In labour' is present
 
 /* Patient presenting with renal failure */	
 Condition with_renal_failure:
-	'Renal failure' is true
+	'Renal failure' is present
 
 /* Second trimester of pregnancy */	
 Condition second_trimester:
@@ -44,15 +44,15 @@ Condition child_maximum_age:
 
 /* Younger child patient's maximum age */	
 Condition younger_child_maximum_age:
- 	age <= 3 years 	
+ 	age < 3 years 	
 
 /* Younger child patient's maximum age */	
 Condition older_child_minimum_age:
- 	age <= 3 years 	
+ 	age >= 3 years 	
 
 /* Patient not on ART */	
 Condition not_on_ART:
- 	'On ART' is false
+ 	'On ART' is 'NO'
 	
 /* Prescribe first-line ART for adults */
 Action prescribe_ART_regimen_1_adult:
