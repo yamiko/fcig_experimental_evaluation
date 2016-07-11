@@ -84,7 +84,7 @@ Action prescribe_ART_regimen_5_adult:
 
 /* Flag as eligible for ART */
 Action flag_eligible_for_ART:
-  "Eligible for" "ART"
+  "Flag patient for" "ART"
 
 /* Refer to district or central hospital */
 Action refer_to_tertiary_hospital:

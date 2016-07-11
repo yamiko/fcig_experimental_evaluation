@@ -4,27 +4,27 @@ Condition HIV_positive_patient:
 		
 /* Patient presenting with Anaemia */	
 Condition anaemic_patient:
-	anaemia is true
+	anaemia is present
 	
 /* Patient presenting with active TB */	
 Condition TB_patient:
-	'TB' is true
+	'TB' is present
 	
 /* Patient presenting with Jaundice */	
 Condition jaundice_patient:
-	'Jaundice' is true
+	'Jaundice' is present
 
 /* Patient presenting with pregnancy */	
 Condition pregnant_patient:
-	'Pregnant woman' is true
+	'Pregnant woman' is yes
 
 /* Patient is in labour */	
 Condition in_labour:
-	'In labour' is true
+	'In labour' is yes
 
 /* Patient presenting with renal failure */	
 Condition with_renal_failure:
-	'Renal failure' is true
+	'Renal failure' is present
 
 /* Weight of 35kg or more */	
 Condition weight_from_35_kg:
@@ -44,7 +44,7 @@ Condition older_child_minimum_age:
 
 /* Patient not on ART */	
 Condition not_on_ART:
- 	'On ART' is false
+ 	'On ART' is No
 	
 /* Prescribe ART regimen 0 */
 Action prescribe_regimen_0:
@@ -68,7 +68,7 @@ Action prescribe_ART_regimen_5_adult:
 
 /* Flag as eligible for ART */
 Action flag_eligible_for_ART:
-  "Eligible for" "ART"
+  "Flag patient for" "ART"
 
 /* Refer to district or central hospital */
 Action refer_to_tertiary_hospital:
