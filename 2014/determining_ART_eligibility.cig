@@ -4,7 +4,7 @@ Condition not_on_ART:
 	
 /* Positive rapid HIV test result */
 Condition positive_rapid_HIV_test:
-	'HIV test result' is positive
+	'HIV rapid test result' is positive
 		
 /* Positive DNA-PCR test result */	
 Condition positive_DNA_PCR_test:
@@ -117,7 +117,7 @@ Recommendation ART_eligibility_in_patients_from_5_years_with_mild_HIV:
 /* Recommendation for determining ART eligibility in children and adults aged 5 years and above
  * with advanced to severe HIV disease
  */
-Recommendation ART_eligibility_in_children_from_5_years_with_severe_HIV:
+Recommendation ART_eligibility_in_patients_from_5_years_with_severe_HIV:
 	Conditions not_on_ART, positive_rapid_HIV_test, advanced_to_severe_HIV,
  		child_from_5_years 
 	Actions flag_eligible_for_ART			
